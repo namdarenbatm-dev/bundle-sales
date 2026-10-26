@@ -1,0 +1,8 @@
+/* تولیدشده توسط scripts/prepare-brand.mjs — دستی ویرایش نکنید */
+@font-face {
+  font-family: 'Yekan';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('/fonts/Yekan-Regular.ttf') format('truetype');
+}

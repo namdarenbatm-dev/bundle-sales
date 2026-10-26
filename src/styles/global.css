@@ -1,0 +1,135 @@
+/* توکن‌های طراحی: سرمه‌ای تیره، فیروزه‌ای، آبی و بنفش ملایم */
+:root {
+  --navy-950: #061224;
+  --navy-900: #0b1f3a;
+  --navy-800: #12305a;
+  --navy-700: #1b447c;
+  --teal-600: #0d9488;
+  --teal-500: #14b8a6;
+  --teal-100: #d9f5f0;
+  --blue-600: #2563eb;
+  --blue-100: #dbe8fe;
+  --violet-600: #6d5bd0;
+  --violet-100: #ece9fb;
+
+  --bg: #f2f5f9;
+  --surface: #ffffff;
+  --border: #dbe3ee;
+  --text: #0f1f35;
+  --muted: #4f6078;
+
+  --ok: #0b6b60;
+  --ok-bg: #d9f5f0;
+  --warn: #8a3b05;
+  --warn-bg: #fdf0cc;
+  --danger: #b42318;
+  --danger-bg: #fee4e2;
+  --info: #1d4ed8;
+  --info-bg: #e3edff;
+
+  --radius: 14px;
+  --shadow: 0 1px 2px rgb(11 31 58 / 6%), 0 6px 20px rgb(11 31 58 / 6%);
+
+  /* فونت اولویت‌دار یکان (فقط وقتی فایل آن در public/fonts باشد فعال است)، سپس Vazirmatn محلی و Tahoma */
+  --font: 'Yekan', 'Vazirmatn', Tahoma, 'Segoe UI', sans-serif;
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue-600);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  unicode-bidi: plaintext;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.print-only {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
